@@ -1,4 +1,4 @@
-**Fully-single-cycle ** **ARM ** **processor-32bit**  
+Fully-single-cycle ARM processor-32bit**  
    
  This project is for final term of Digital Design and Microprocessor, subject code: ELT3290.  
    
