@@ -1,0 +1,11 @@
+Mã ALUControl	Phép toán	Chức năng
+0000	ADD	A + B
+0001	SUB	A - B
+0010	AND	A AND B
+0011	OR	A OR B
+0100	XOR	A XOR B
+0101	NOR	NOT (A OR B)
+0110	SLL	Dịch trái logic
+0111	SRL	Dịch phải logic
+1000	SRA	Dịch phải số học
+1001	SLT	So sánh A < B
