@@ -11,10 +11,10 @@ module alu
 );
 
 /*
-0000	ADD	A + B
-0001	SUB	A - B
-0010	AND	A AND B
-0011	ORR		A OR B
+00	ADD	A + B
+01	SUB	A - B
+10	AND	A AND B
+11	ORR	A OR B
 */
 	logic n, z, c, v; //flags
 	logic [WIDTH:0] add_extended;
