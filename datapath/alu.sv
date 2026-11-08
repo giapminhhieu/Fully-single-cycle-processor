@@ -6,7 +6,7 @@ module alu
 	input logic  [WIDTH-1:0] alu_input_A,
 	input logic  [WIDTH-1:0] alu_input_B,
 	
-	output logic [3:0]		 flags, //[N,Z,C,V]
+	output logic [3:0]		 alu_flags, //[N,Z,C,V]
 	output logic [WIDTH-1:0] alu_result
 );
 
@@ -55,6 +55,6 @@ always_comb begin
 		
 		n = alu_result[WIDTH -1];
 		z = (alu_result == '0);
-		flags = {n, z, c, v};
+		alu_flags = {n, z, c, v};
 	end
 endmodule
