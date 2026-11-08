@@ -1,10 +1,14 @@
 module single_cycle_processor_32bit_top(
 	input logic clk,
-	input logic rst_n
+	input logic rst_n,
+	
+	output logic [31:0] pc,
+   output logic [31:0] instruction,
+   output logic [31:0] result,
+   output logic        mem_write
 );
-	logic [31:0] pc, instruction, result;
 	logic [3:0]  alu_flags;
-	logic        pc_src, reg_write, mem_write, mem_to_reg, alu_src;
+	logic        pc_src, reg_write, mem_to_reg, alu_src;
 	logic [1:0]  imm_src, reg_src, alu_ctrl;
 	
 // khai bao rom
