@@ -1,7 +1,0 @@
-module ALU
-#(parameter WIDTH = 32)
-(
-
-);
-
-endmodule
