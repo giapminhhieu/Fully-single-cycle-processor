@@ -6,13 +6,14 @@ module dmem #(parameter WIDTH = 32)
 	input logic [WIDTH-1:0] addr, //address, 
 	input logic [WIDTH-1:0] wd, //write data, neu we = 1 thi du lieu dc nghi vao bo nho
 	
-	ouput logic [WIDTH-1:0] rd // loi ra: read data
+	output logic [WIDTH-1:0] rd // loi ra: read data
 );
-	logic [WIDTH-1:0] mem [0:256]; // mang 256 o nho, moi o co kich thuoc WIDTH bit
+	logic [WIDTH-1:0] mem [0:255]; // mang 256 o nho, moi o co kich thuoc WIDTH bit
 	assign rd = mem[addr[WIDTH-1:2]]; // dia chi co gia tri 0 4 8... -> bo 2 bit LSB (chia cho 4)
 	
 	always_ff @(posedge clk) begin
 	// neu we = 1-> ghi data tu wd vao mem voi dia chi addr
 		if(we) 
-			mem[addr[WIDTH-1:2]] <= wd;		
+			mem[addr[WIDTH-1:2]] <= wd;
+	end		
 endmodule
