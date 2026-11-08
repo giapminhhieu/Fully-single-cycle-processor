@@ -55,7 +55,42 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+
 set_global_assignment -name SYSTEMVERILOG_FILE single_cycle_processor_32bit_top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath/adder/adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath/alu/alu.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath/mux_2/mux_2.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/mux_2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/pc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/reg_file.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE memory/dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory/imem.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/control_unit.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/decoder/main_decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/decoder/alu_decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/decoder/pc_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/decoder/decoder.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/conditional_logic/conditional_check.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu_core/conditional_logic/conditional_logic.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE test_bench/test_bench_single_cycle_processor_32bit_.sv
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_single_cycle_processor -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_single_cycle_processor -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_single_cycle_processor
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_single_cycle_processor -section_id tb_single_cycle_processor
+set_global_assignment -name EDA_TEST_BENCH_FILE test_bench/tb_single_cycle_processor.sv -section_id tb_single_cycle_processor
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4

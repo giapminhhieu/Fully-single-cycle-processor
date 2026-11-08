@@ -1,0 +1,256 @@
+# do single_cycle_processor_32bit_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/hiu/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/single_cycle_processor_32bit_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/single_cycle_processor_32bit_top.sv 
+# -- Compiling module single_cycle_processor_32bit_top
+# 
+# Top level modules:
+# 	single_cycle_processor_32bit_top
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/mux_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/mux_2.sv 
+# -- Compiling module mux_2
+# 
+# Top level modules:
+# 	mux_2
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/pc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/pc.sv 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/reg_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/datapath/reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 23:06:21 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:21 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/control_unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/main_decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/main_decoder.sv 
+# -- Compiling module main_decoder
+# 
+# Top level modules:
+# 	main_decoder
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/alu_decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/alu_decoder.sv 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/pc_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/pc_logic.sv 
+# -- Compiling module pc_logic
+# 
+# Top level modules:
+# 	pc_logic
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/decoder/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic/conditional_check.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic/conditional_check.sv 
+# -- Compiling module conditional_check
+# 
+# Top level modules:
+# 	conditional_check
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic/conditional_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/cpu_core/conditional_logic/conditional_logic.sv 
+# -- Compiling module conditional_logic
+# 
+# Top level modules:
+# 	conditional_logic
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/memory/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench {/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:06:22 on Nov 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench" /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv 
+# -- Compiling module tb_single_cycle_processor
+# 
+# Top level modules:
+# 	tb_single_cycle_processor
+# End time: 23:06:22 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_single_cycle_processor
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_single_cycle_processor 
+# Start time: 23:06:22 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_single_cycle_processor
+# Loading work.single_cycle_processor_32bit_top
+# Loading work.imem
+# Loading work.control_unit
+# Loading work.decoder
+# Loading work.main_decoder
+# Loading work.pc_logic
+# Loading work.alu_decoder
+# Loading work.conditional_logic
+# Loading work.conditional_check
+# Loading work.datapath
+# Loading work.mux_2
+# Loading work.adder
+# Loading work.PC
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.extend
+# Loading work.dmem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 6, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_single_cycle_processor/dut File: /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv Line: 9
+# ** Warning: (vsim-3722) /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv(9): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv(9): [TFMPC] - Missing connection for port 'instruction'.
+# ** Warning: (vsim-3722) /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv(9): [TFMPC] - Missing connection for port 'result'.
+# ** Warning: (vsim-3722) /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv(9): [TFMPC] - Missing connection for port 'mem_write'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=30000 | PC=00000004 | Instr=e2802005 | ALUResult=5 (0x00000005) | Result=5 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=40000 | PC=00000008 | Instr=e280300c | ALUResult=12 (0x0000000c) | Result=12 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=50000 | PC=0000000c | Instr=e2437009 | ALUResult=3 (0x00000003) | Result=3 | Flags(NZCV)=0010 | RegW=1 | MemW=0
+# Time=60000 | PC=00000010 | Instr=e1874002 | ALUResult=7 (0x00000007) | Result=7 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=70000 | PC=00000014 | Instr=e0035004 | ALUResult=4 (0x00000004) | Result=4 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=80000 | PC=00000018 | Instr=e0855004 | ALUResult=11 (0x0000000b) | Result=11 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=90000 | PC=0000001c | Instr=e0558007 | ALUResult=8 (0x00000008) | Result=8 | Flags(NZCV)=0010 | RegW=1 | MemW=0
+# Time=100000 | PC=00000020 | Instr=0a000003 | ALUResult=52 (0x00000034) | Result=52 | Flags(NZCV)=0000 | RegW=0 | MemW=0
+# Time=110000 | PC=00000024 | Instr=e0538004 | ALUResult=5 (0x00000005) | Result=5 | Flags(NZCV)=0010 | RegW=1 | MemW=0
+# Time=120000 | PC=00000028 | Instr=e0882007 | ALUResult=8 (0x00000008) | Result=8 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=130000 | PC=0000002c | Instr=e0578007 | ALUResult=0 (0x00000000) | Result=0 | Flags(NZCV)=0110 | RegW=1 | MemW=0
+# Time=140000 | PC=00000030 | Instr=0a000000 | ALUResult=56 (0x00000038) | Result=56 | Flags(NZCV)=0000 | RegW=0 | MemW=0
+# Time=150000 | PC=00000038 | Instr=e5802060 | ALUResult=96 (0x00000060) | Result=96 | Flags(NZCV)=0000 | RegW=0 | MemW=1
+#    >>> [MEMORY WRITE] Ghi gia tri 8 vao dia chi Byte 96 (0x00000060)
+# Time=160000 | PC=0000003c | Instr=e5907060 | ALUResult=96 (0x00000060) | Result=8 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=170000 | PC=00000040 | Instr=e0822007 | ALUResult=16 (0x00000010) | Result=16 | Flags(NZCV)=0000 | RegW=1 | MemW=0
+# Time=180000 | PC=00000044 | Instr=e5832058 | ALUResult=100 (0x00000064) | Result=100 | Flags(NZCV)=0000 | RegW=0 | MemW=1
+#    >>> [MEMORY WRITE] Ghi gia tri 16 vao dia chi Byte 100 (0x00000064)
+# ============================================================
+#    [PASS] MO PHONG THANH CONG! Gia tri 16 da duoc ghi vao dia chi 100.
+# ============================================================
+# ** Note: $stop    : /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv(66)
+#    Time: 200 ns  Iteration: 0  Instance: /tb_single_cycle_processor
+# Break in Module tb_single_cycle_processor at /home/hiu/Documents/Thiet_ke_so_va_vi_xu_ly/final_term_project/test_bench/tb_single_cycle_processor.sv line 66
+# 
+# stdin: <EOF>
+# End time: 23:08:12 on Nov 08,2026, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 5

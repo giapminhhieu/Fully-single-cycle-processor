@@ -6,5 +6,5 @@ module adder
 	
 	output logic [WIDTH-1:0] adder_output
 );
-	assign adder_output = adder_input_A + adder_input_B
+	assign adder_output = adder_input_A + adder_input_B;
 endmodule
