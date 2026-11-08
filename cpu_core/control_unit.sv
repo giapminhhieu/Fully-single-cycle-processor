@@ -1,5 +1,6 @@
 module control_unit(
 	input logic clk,
+	input logic rst_n,
 	
 	input logic [3:0] cond, //[31:28] instruction
 	input logic [3:0]	alu_flags,
@@ -41,9 +42,9 @@ module control_unit(
 	);
 	
 	//khai bao conditional_logic
-	
 	conditional_logic u_conditional_logic(
 		.clk (clk),
+		.rst_n (rst_n),
 		.pc_s (pc_s),
 		.reg_w (reg_w),
 		.mem_w (mem_w),

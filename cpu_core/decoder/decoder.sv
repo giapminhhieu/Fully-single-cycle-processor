@@ -37,7 +37,7 @@ logic alu_op;
 	pc_logic u_pc_logic(
 		.rd (rd),
 		.branch (branch),
-		.regW (reg_write),
+		.regW (reg_w),
 		.pc_s (pc_s)
 	);
 	

@@ -1,5 +1,6 @@
 module conditional_logic(
 	input logic 		clk,
+	input logic 		rst_n
 	input logic 		pc_s,
 	input logic 		reg_w,
 	input logic 		mem_w,
@@ -16,6 +17,7 @@ logic cond_ex;
 	//khai bao conditional check
 	conditional_check u_conditional_check(
 		.clk (clk),
+		.rst_n (rst_n),
 		.cond (cond),
 		.alu_flags (alu_flags),
 		.flagW (flagW),

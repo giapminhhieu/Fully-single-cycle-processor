@@ -5,5 +5,5 @@ module pc_logic (
 	output logic 		pc_s
 );
 	// pc_src = 1 khi thanh ghi R15 duoc ghi boi instruction hoac re nhanh
-	assign pc_src = ((rd == 4'b1111) & regW | branch)
+	assign pc_s = ((rd == 4'b1111) & regW | branch);
 endmodule

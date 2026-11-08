@@ -1,5 +1,6 @@
 module conditional_check(
 	input logic			clk,
+	input logic 		rst_n, //reset muc thap, phuc vu mo phong
 	input logic [3:0] cond,
 	input logic [3:0] alu_flags,
 	input logic [1:0]	flagW,
@@ -13,7 +14,10 @@ module conditional_check(
 	assign {n, z, c, v} = flags;
 	assign flag_write = flagW & {2{cond_ex}}; // chi cap nhat co khi cond_ex=1
 
-	always_ff @(posedge clk) begin
+	always_ff @(posedge clk or negedge rst_n) begin
+		if(!rst_n) begin
+			flags <= 4'b0000;
+		end
 			if (flag_write[0]) flags[1:0] <= alu_flags[1:0]; // cap nhat co C, V
 			if (flag_write[1]) flags[3:2] <= alu_flags[3:2]; // cap nhat co N, Z
 	end
