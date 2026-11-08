@@ -1,7 +1,6 @@
 module imem #(
 	parameter WIDTH   = 32,
-	parameter DEPTH   = 64,               // so lenh toi da
-	parameter MEMFILE = "memfile.dat"
+	parameter DEPTH   = 64               // so lenh toi da
 )(
     input  logic [WIDTH-1:0] addr,   //dia chi lay tu pc
     output logic [WIDTH-1:0] instr   // ma may 32 bit
