@@ -9,7 +9,9 @@ module dmem #(parameter WIDTH = 32)
 	output logic [WIDTH-1:0] rd // loi ra: read data
 );
 	logic [WIDTH-1:0] mem [0:255]; // mang 256 o nho, moi o co kich thuoc WIDTH bit
-	assign rd = mem[addr[WIDTH-1:2]]; // dia chi co gia tri 0 4 8... -> bo 2 bit LSB (chia cho 4)
+	//chi lay 8 bit do co 225 o nho
+	assign rd = mem[addr[9:2]]; // dia chi co gia tri 0 4 8... -> bo 2 bit LSB (chia cho 4)
+	
 	
 	always_ff @(posedge clk) begin
 	// neu we = 1-> ghi data tu wd vao mem voi dia chi addr

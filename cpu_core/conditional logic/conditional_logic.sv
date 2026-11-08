@@ -1,6 +1,6 @@
 module conditional_logic(
 	input logic 		clk,
-	input logic 		rst_n
+	input logic 		rst_n,
 	input logic 		pc_s,
 	input logic 		reg_w,
 	input logic 		mem_w,

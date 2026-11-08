@@ -51,7 +51,7 @@ module control_unit(
 		.flagW (flagW),
 	
 		.cond (cond), //[31:28] instruction
-		.alu_flag (alu_flags),
+		.alu_flags (alu_flags),
 		
 		.pc_src (pc_src),
 		.reg_write (reg_write),

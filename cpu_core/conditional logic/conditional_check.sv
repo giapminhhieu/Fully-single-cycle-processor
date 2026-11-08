@@ -18,11 +18,12 @@ module conditional_check(
 		if(!rst_n) begin
 			flags <= 4'b0000;
 		end
+		else begin
 			if (flag_write[0]) flags[1:0] <= alu_flags[1:0]; // cap nhat co C, V
 			if (flag_write[1]) flags[3:2] <= alu_flags[3:2]; // cap nhat co N, Z
+		end
 	end
 
-	// Khối tổ hợp kiểm tra điều kiện (Condition Check)
 	always_comb begin
 		case (cond)
 			4'b0000: cond_ex = z;               // EQ: Equal

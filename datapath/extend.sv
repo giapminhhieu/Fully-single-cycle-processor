@@ -16,7 +16,7 @@ always_comb begin
 		2'b01: ext_imm = {20'b0, instr_imm[11:0]};
 		
 		// Branch: mo rong co dau (sign-extend) 24 bit len 32 bit vaf dich trai 2 bit
-		2'b10: ext_imm = {6{instr_imm[23]}}, instr_imm[23:0], 2'b00};
+		2'b10: ext_imm = {{6{instr_imm[23]}}, instr_imm[23:0], 2'b00};
 		
 		default: ext_imm = 32'bx;
 	endcase	

@@ -123,7 +123,7 @@ module datapath(
 		.alu_ctrl (alu_ctrl),
 		.alu_input_A (srcA),
 		.alu_input_B (srcB),
-		.flags (alu_flags),
+		.alu_flags (alu_flags),
 		.alu_result (alu_result)
 	);
 
