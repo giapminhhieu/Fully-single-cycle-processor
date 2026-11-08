@@ -2,7 +2,7 @@ module alu_decoder(
 	input logic 		alu_op, 
 	// bit [24:21] cua instruction, ma thuc hien ADD, SUB, AND, ORR [4:1]
 	// va bit thu 20 (bit S) xac dinh co cap nhat co trang thai hay khong [0]
-	input logic [4:0]	funct
+	input logic [4:0]	funct,
 	
 	output logic [1:0] alu_ctrl,
 	output logic [1:0] flagW // tin hieu cho phep ghi co - flag write
@@ -14,7 +14,7 @@ always_comb begin
 		flagW = 2'b00;
 	end
 	else begin
-		case (funct[4:1] 
+		case (funct[4:1]) 
 			4'b0100: begin //ADD
 				alu_ctrl = 2'b00;
 				//cap nhat co NZ va CV neu bit S = 1

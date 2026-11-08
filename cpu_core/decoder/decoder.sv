@@ -6,8 +6,8 @@ module decoder(
 	
 	output logic 			pc_s,
 	output logic [1:0]	flagW,
-	output logic 			reg_write,	
-	output logic 			mem_write,	
+	output logic 			reg_w,	
+	output logic 			mem_w,	
 	output logic 			mem_to_reg,	
 	output logic 			alu_src,		
 	output logic [1:0]	imm_src,		
@@ -23,9 +23,9 @@ logic alu_op;
 		.funct_5 (funct[5]),
 		.funct_0 (funct[0]),
 		
-		.reg_write (reg_write) ,
-		.mem_write (mem_write),
-		.mem_to_reg (mem_to_reg ),
+		.reg_w (reg_w) ,
+		.mem_w (mem_w),
+		.mem_to_reg (mem_to_reg),
 		.alu_src (alu_src),
 		.imm_src (imm_src),
 		.reg_src (reg_src),
@@ -47,6 +47,6 @@ logic alu_op;
 		.funct (funct[4:0]),
 		.alu_ctrl (alu_ctrl),
 		.flagW (flagW)
-	)
+	);
 
 endmodule
