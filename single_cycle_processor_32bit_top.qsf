@@ -59,3 +59,8 @@ set_global_assignment -name SYSTEMVERILOG_FILE single_cycle_processor_32bit_top.
 set_global_assignment -name SYSTEMVERILOG_FILE datapath/adder/adder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE datapath/alu/alu.sv
 set_global_assignment -name SYSTEMVERILOG_FILE datapath/mux_2/mux_2.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/PC.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath/datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory/dmem.sv
