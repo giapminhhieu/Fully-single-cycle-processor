@@ -6,7 +6,7 @@ module imem #(
     output logic [WIDTH-1:0] instr   // ma may 32 bit
 );
 
-    logic [WIDTH:0] rom[0:DEPTH-1];
+	logic [WIDTH-1:0] rom[0:DEPTH-1];
 
     initial begin
 		for (int i = 0; i < DEPTH; i++) rom[i] = '0; // o chua dung = 0, tranh gia tri x
